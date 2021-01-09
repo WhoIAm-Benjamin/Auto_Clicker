@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>470</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>470</width>
+    <height>445</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>470</width>
+    <height>455</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Browallia New</family>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Auto Clicker</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>-2</y>
+      <width>231</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Browallia New</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">gridline-color: rgb(0, 0, 255);</string>
+    </property>
+    <property name="title">
+     <string>Click point</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QPushButton" name="capturePicture">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>17</y>
+       <width>90</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Browallia New</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>Capture
+picture</string>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>27</x>
+       <y>108</y>
+       <width>88</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Browallia New</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Picture similar:</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="pictureSimilar">
+     <property name="geometry">
+      <rect>
+       <x>114</x>
+       <y>104</y>
+       <width>42</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Browallia New</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="accelerated">
+      <bool>true</bool>
+     </property>
+     <property name="minimum">
+      <number>60</number>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>124</y>
+       <width>214</width>
+       <height>129</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Define Search Scope</string>
+     </property>
+     <widget class="QRadioButton" name="fullScreenToSearch">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>19</y>
+        <width>197</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Browallia New</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Full screen to search</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="partScreenToSearch">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>38</y>
+        <width>197</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Browallia New</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Part screen to search</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="x">
+      <property name="geometry">
+       <rect>
+        <x>97</x>
+        <y>58</y>
+        <width>43</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="r">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>58</y>
+        <width>43</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="captureScope">
+      <property name="geometry">
+       <rect>
+        <x>6</x>
+        <y>58</y>
+        <width>67</width>
+        <height>62</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Capture
+Scope</string>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>77</x>
+        <y>58</y>
+        <width>18</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Browallia New</family>
+        <pointsize>19</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>L:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>58</y>
+        <width>18</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Browallia New</family>
+        <pointsize>19</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>R:</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="y">
+      <property name="geometry">
+       <rect>
+        <x>97</x>
+        <y>91</y>
+        <width>43</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>77</x>
+        <y>91</y>
+        <width>18</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Browallia New</family>
+        <pointsize>19</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>T:</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="b">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>91</y>
+        <width>43</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>91</y>
+        <width>18</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Browallia New</family>
+        <pointsize>19</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>B:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGraphicsView" name="selectedPicture">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>17</y>
+       <width>120</width>
+       <height>80</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>-2</y>
+      <width>212</width>
+      <height>86</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Browallia New</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Click Options</string>
+    </property>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>28</y>
+       <width>88</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Browallia New</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Mouse Button:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>55</y>
+       <width>88</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Browallia New</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Mouse Action:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="mouseButton">
+     <property name="geometry">
+      <rect>
+       <x>106</x>
+       <y>23</y>
+       <width>93</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Left Button</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Right Button</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Middle Button</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="mouseAction">
+     <property name="geometry">
+      <rect>
+       <x>106</x>
+       <y>51</y>
+       <width>93</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Single Click</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Double Click</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Button Down</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Button Up</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>88</y>
+      <width>212</width>
+      <height>86</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Stop Options</string>
+    </property>
+    <widget class="QRadioButton" name="stopTillGetCommand">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>26</y>
+       <width>190</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Browallia New</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Stop till get command</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="stopTillRepeatCountTimes">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>55</y>
+       <width>108</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop till repeat</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBox_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>51</y>
+       <width>41</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>999</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>168</x>
+       <y>55</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>times</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>173</y>
+      <width>212</width>
+      <height>86</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Click HotKey</string>
+    </property>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>30</y>
+       <width>129</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Start HotKey:     Ctrl + </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>60</y>
+       <width>127</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop HotKey:     Ctrl + </string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="startHotKey">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>25</y>
+       <width>54</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <property name="currentText">
+      <string>f1</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>f1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f4</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f7</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f8</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f10</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f12</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="stopHotKey">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>54</y>
+       <width>54</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <property name="currentText">
+      <string>f1</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>f1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f4</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f7</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f8</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>10</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>f12</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_6">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>261</y>
+      <width>450</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Browallia New</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Click Interval</string>
+    </property>
+    <widget class="QRadioButton" name="fixedInterval">
+     <property name="geometry">
+      <rect>
+       <x>19</x>
+       <y>23</y>
+       <width>99</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Fixed Interval</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="hours">
+     <property name="geometry">
+      <rect>
+       <x>17</x>
+       <y>64</y>
+       <width>43</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>23</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="minutes">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>64</y>
+       <width>43</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>59</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="seconds1">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>64</y>
+       <width>43</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="seconds1_1_10">
+     <property name="geometry">
+      <rect>
+       <x>167</x>
+       <y>64</y>
+       <width>43</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>17</x>
+       <y>47</y>
+       <width>42</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Browallia New</family>
+       <pointsize>13</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Hours</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>47</y>
+       <width>43</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Browallia New</family>
+       <pointsize>13</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Minutes</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="seconds_1">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>50</y>
+       <width>43</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Browallia New</family>
+       <pointsize>13</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Seconds</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="seconds1_10_1">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>50</y>
+       <width>43</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Browallia New</family>
+       <pointsize>13</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>1/10 S</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>14</y>
+       <width>5</width>
+       <height>83</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="randomInterval">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>23</y>
+       <width>136</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Random Interval</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="seconds2_1_10">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>63</y>
+       <width>47</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>307</x>
+       <y>70</y>
+       <width>24</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Browallia New</family>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>and</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="seconds2">
+     <property name="geometry">
+      <rect>
+       <x>341</x>
+       <y>63</y>
+       <width>47</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>47</y>
+       <width>42</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Browallia New</family>
+       <pointsize>13</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>1/10 S</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>341</x>
+       <y>47</y>
+       <width>51</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Seconds</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="startButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>367</y>
+      <width>113</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>START</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopButton">
+    <property name="geometry">
+     <rect>
+      <x>173</x>
+      <y>367</y>
+      <width>113</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>STOP</string>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exitButton">
+    <property name="geometry">
+     <rect>
+      <x>316</x>
+      <y>367</y>
+      <width>113</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EXIT</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>470</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Book Antiqua</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="defaultUp">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menuAbout">
+    <property name="font">
+     <font>
+      <family>Browallia New</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="title">
+     <string>About </string>
+    </property>
+   </widget>
+   <addaction name="menuAbout"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
